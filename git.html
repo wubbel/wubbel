@@ -52,7 +52,7 @@
 
     <h2>Klonen</h2>
     <p>Ich hab vorhin schon von einer Kopie gesprochen und genau das werden wir jetzt machen. Wir holen uns eine Kopie von diesem Projekt auf deinen Rechner. Man nennt das auch <b>klonen.</b></p>
-    <p>Wir werden das ganze im Terminal, oder auch Kommandozeile genannt, machen. Die kennst du eh schon und kannst damit gut umgehen und gerade am Anfang ist es besser das so zu machen, damit du ein bisschen besser
+    <p>Wir werden das ganze im Terminal, Konsole oder auch Kommandozeile genannt, machen. Die kennst du eh schon und kannst damit gut umgehen und gerade am Anfang ist es besser das so zu machen, damit du ein bisschen besser
     das git Prinzip verstehst. Später, wenn du git schon verinnerlicht hast, kann ich dir ein Programm dafür zeigen, dann musst du das nicht mehr in der Kommandozeile machen.</p>
     <h3>1. Github Account anlegen</h3>
     <p>Leg dir bitte auf <a href="https://github.com/" target="_blank">github</a> einen Account an. Du brauchst dann in einem nächsten Schritt deinen Benutzernamen und Passwort.</p>
@@ -78,6 +78,32 @@
         Wenn alles geklappt hat solltest du jetzt einen Ordner <b>Wubbel</b> in deinem Ordner haben und darin sollten sich ein paar Dateien befinden.</p>
     <img src="images/10_newfolder.png" alt="Neuer Ordner">
 
+    <h2>Pushen</h2>
+    <p>Jetzt kümmern wir uns darum, dass du Änderungen machen und die dann auch online betrachten kannst. Here we go :D</p>
+    <h3>1. Dateien ändern</h3>
+    <p>Bilde mir ein du hast erwähnt, dass du <a href="https://atom.io/" target="_blank">Atom</a> als Editor benützt? Du könntest auch <a href="https://www.sublimetext.com/">Sublime</a> verwenden. In dem meisten Editoren kann man auf "Datei" / "Öffnen" klicken und gleich einen ganzen Ordner,
+        nämlich den "wubbel" Ordner öffnen. Dann siehst du, dass wir zwei HTML Dateien haben, einen Ordner mit Bildern und auch einen Ordner für CSS Dateien.</p>
+    <img src="images/11_sublime.png" alt="Neuer Ordner">
+    <p>Du kannst in irgendeiner HTML oder CSS Datei eine Änderung machen. Irgendwo Text hinschreiben oder vielleicht eine CSS Anweisung schreiben, die irgendwas tut.</p>
+    <p>Diese Änderungen kannst du dir auch auf deinem Computer ansehen, bevor du sie commitest. Dazu einfach die <code>index.html</code> Datei in den Browser ziehen oder Rechtsklick -> öffnen mit oder so.</p>
+    <p>Wichtig: immer vorher speichern drücken, bevor du es dir ansiehst.</p>
+    <p>Wenn du zufrieden bist mit deiner Änderung können wir auch schon loslegen.</p>
+    <h3>2. Prüfen</h3>
+    <p>Zuerst wollen wir sehen, was wir alles geändert haben. Um das herauszufinden tippe im Terminal <code>git status</code>.</p>
+    <p>Git sollte dir jetzt zeigen, welche Datei du bearbeitet hast.</p>
+    <h3>3. Hinzufügen</h3>
+    <p>Nun wählen wir aus, was wir zu unseren Commit hinzufügen möchten. Dazu gibt es zwei Varianten:</p>
+    <ul>
+        <li><code>git add -a</code> <br>Alle Dateien, die verändert wurden hinzufügen</li>
+        <li><code>git add index.html</code> <br>eine spezifische Datei hinzufügen</li>
+    </ul>
+    <h3>4. Commiten</h3>
+    <p>Nun wollen wir dem Ganzen einen Namen geben: <code>git commit -m "DEINE NACHRICHT"</code></p>
+    <h3>5. Pushen</h3>
+    <p>Und das ganze Paket pushen wir jetzt auf den Server mit: <code>git push</code></p>
+    <h3>6. Überprüfen</h3>
+    <p>Jetzt gibt es zwei Orte, an denen wir uns anschauen können, ob das gut angekommen ist. In 1-2 Minuten solltest du dann unter der URL deine Änderungen sehen. Du kannst aber auch auf der github Seite von diesem
+    Repository unter "Commits" nachsehen, ob dort dein Commit sichtbar ist.</p>
 </div>
 </body>
 </html>
