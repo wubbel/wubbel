@@ -4,3 +4,12 @@
     --primary:#17a2b8;
 }
 
+img
+{
+    max-width: 100%;
+}
+
+.container
+{
+    padding-top: 5rem;
+}

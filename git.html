@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Git - Julia's Coding Garden</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="/">Julia's Coding Garden</a>
+</nav>
+<div class="container">
+    <h1>Git</h1>
+    <p><a href="https://de.wikipedia.org/wiki/Git" target="_blank">Git</a> ist ein so genanntes Versionierungssystem, das heutzutage fast immer von Entwicklern eingesetzt wird. Vor allem, wenn mehrere Personen zusammen arbeiten oder man an einem größeren Projekt arbeitet. Es hilft dabei:</p>
+    <ul>
+        <li>zu sehen, wer was gemacht hat.</li>
+        <li>zu sehen wann, was, von wem, an welchen Dateien geändert wurde.</li>
+        <li>zu einer früheren Version zurückzukehren. Beispielsweise, wenn man einen Fehler hat und nicht weiß was das Problem ist, dann kann man sich vorherige Versionen ansehen und herausfinden, was genau geändert wurde.</li>
+    </ul>
+
+    <h2>Repository</h2>
+    <p><a href="https://github.com/" target="_blank">Github</a> ist eine Plattform, auf der Entwickler gratis ihre Projekte speichern können. Einzige Bedingung dafür, dass es gratis bleibt, ist dass diese Projekte öffentlich zugänglich sein müssen.
+        Dadurch ist eine große Community entstanden und auf Github findet man jede Menge an fertig entwickelten Programmen, die man verwenden kann, oder wo man Dinge abschauen kann. Auf github landet man auch immer wieder, wenn man nach Fehlern googled.
+        Es ist im Prinzip ein riesiges Forum, auf dem Entwickler Fragen stellen können und sich gegenseitig helfen.
+    </p>
+
+    <p>Das Projekt, das du gerade liest liegt auch auf github. So ein Projekt, das Programmiercode enthält wird auch <b>Repository</b> genannt.</p>
+    <img src="images/01_github.png" alt="Repository auf github">
+    <ul>
+        <li><a href="https://github.com/wubbel/wubbel.github.io">wubbel Repository</a></li>
+        <li><a href="https://wubbel.github.io">wubbel im Web</a></li>
+    </ul>
+    <p>Auf diesem Bild siehst du die so genannten <b>Commits</b>, die am Repository gemacht wurden. Jedes mal, wenn ich etwas mache und mit einem Teil fertig bin, dann nehme ich meine geänderten Dateien, geb dem Ganzen einen Namen und lade es hoch. Das ganze Paket nennt man einen Commit.</p>
+    <img src="images/02_commits.png" alt="Commits auf github">
+    <p>Ein Commit besteht aus:</p>
+    <ul>
+        <li>Name - dieser sollte grob beschreiben, was geändert wurde</li>
+        <li>Geänderte Code-Zeilen</li>
+        <li>Entwickler</li>
+        <li>Datum und Uhrzeit</li>
+    </ul>
+
+    <h2>Pushen und Pullen</h2>
+    <p>Das Prinzip von der Arbeitsweise mit git ist, dass man sein Repository auf einem Server speichert und sich eine Kopie davon auf seinen Computer holt und alle Änderungen dann immer wieder auf den Server hochlädt.</p>
+    <p>Ein <b>Server</b> ist nichts anders als ein Computer, nur dass er halt irgendwo in einem Kämmerchen rumsteht und darauf ausgelegt ist dein Projekt übers Internet zugänglich zu machen.</p>
+    <p>Das tolle an git ist, dass so mehrere Entwickler an einem Projekt arbeiten können. Jeder hat eine Kopie vom Projekt auf seinem Computer und <b>pusht</b>, so nennt man das, wenn man Änderungen hochlädt, Änderungen auf den Server.</p>
+    <p>Gibt es auf dem Server Neuigkeiten, die ich noch nicht auf meinem Computer habe kann ich sie mir herunterladen. Das nennt man auch <b>pull</b>.</p>
+    <p>So können mehrere Entwickler gleichzeitig an einem Projekt arbeiten und git kümmert sich darum, dass alle über Änderungen informiert werden und fügt die Änderungen alle am Server zusammen.</p>
+    <img src="images/03_pushpull.png" alt="Pushen und pullen">
+
+    <h2>Klonen</h2>
+    <p>Ich hab vorhin schon von einer Kopie gesprochen und genau das werden wir jetzt machen. Wir holen uns eine Kopie von diesem Projekt auf deinen Rechner. Man nennt das auch <b>klonen.</b></p>
+    <p>Wir werden das ganze im Terminal oder auch Kommandozeile machen. Die kennst du eh schon und kannst damit gut umgehen und gerade am Anfang ist es besser das so zu machen, damit du ein bisschen besser
+    das git Prinzip verstehst. Später, wenn du git schon verinnerlicht hast kann ich dir ein Programm dafür zeigen, dann musst du das nicht mehr in der Kommandozeile machen.</p>
+    <h3>1. Ordner erstellen</h3>
+    <p>Zuerst erstelle bitte einen Ordner auf deinem Computer, in dem du alle deine Projekte speichern möchtest. Bei mir heißt der Ordner Code.</p>
+    <img src="images/04_foldercode.png" alt="Code Ordner">
+    <h3>2. In Ordner navigieren</h3>
+    <p>Nun müssen wir in der Kommandozeile in diesen Ordner wechseln, damit wir dort Aktionen ausführen können. Ich weiß nicht genau, wie das auf Windows ist. Sollte es da Probleme geben können wir uns das auch gemeinsam ansehen.
+    Bei mir ist es so, dass wenn ich ein neues Terminal Fenster öffne startet es in meinem Benutzer-Ordner. Mein "Code" Ordner befindet sich in diesem Ordner. Daher kann ich mit dem Befehl <code>cd Code</code> in diesen Ordner wechseln.</p>
+    <h4>2.1 Terminal nach dem Start</h4>
+    <img src="images/05_terminalstart.png" alt="Terminal vor dem Start">
+    <h4>2.2 Terminal nach dem Start</h4>
+    <img src="images/06_terminalcommand.png" alt="Befehl in Terminal eingeben">
+    <h4>2.3 Terminal nach dem Start</h4>
+    <img src="images/07_terminalfolder.png" alt="Terminal nach dem Ausführen des Befehls">
+    <h3>3. Repository klonen</h3>
+    <p>Jetzt kommt der spannende Teil. Wir holen uns jetzt mit einem Befehl das Projekt, so wie es gerade auf dem Server bei github liegt auf deinen Computer. Auf github kannst du dir die Adresse zum Projekt kopieren.
+        Sie verbirgt sich hinter dem grünen Button "Clone or Download"<br>
+    Befehl: <code>git clone https://github.com/wubbel/wubbel.github.io.git</code></p>
+    <img src="images/08_clone.png" alt="Projekt klonen">
+    <img src="images/09_terminalclone.png" alt="Projekt klonen">
+    <p>Wenn alles geklappt hat solltest du jetzt einen Ordner <b>Wubbel</b> in deinem Ordner haben und darin sollten sich ein paar Dateien befinden.</p>
+    <img src="images/10_newfolder.png" alt="Neuer Ordner">
+
+</div>
+</body>
+</html>
