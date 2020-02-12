@@ -14,7 +14,7 @@
 <div class="container">
     <h1>CSS</h1>
     <p>CSS ist eine Stylesprache. Sie enthält genau so wie HTML auch keine Logik sondern verleiht HTML Elementen ihr Aussehen und definiert ihre Position.
-    Um wieder bei dem Beispiel mit dem Haus zu bleiben erledigt CSS die Arbeit des Malers und Inneneinrichters.</p>
+    Um wieder bei dem Beispiel mit dem Haus zu bleiben erledigt CSS die Arbeit des Malers und Inneneinrichters. CSS Dateien haben die Endung <b>.css</b></p>
     <h2>CSS und HTML verknüpfen</h2>
     <p>Es gibt drei Arten, wie man CSS Anweisungen schreiben kann</p>
     <ul>
@@ -25,16 +25,24 @@
     <h3>Inline</h3>
     <p>Inline bedeutet, dass das CSS in der selben "Linie" wie das HTML geschrieben wird. Im Start-Tag eines HTML Elements fügt man mit <b>style</b> CSS Anweisungen direkt hinzu. Zum Beispiel so:</p>
     <code>style="color: red"</code>
-
+    <img src="images/css/01_inline.png" alt="Inline CSS">
     <h3>Head</h3>
     <p>Die zweite Möglichkeit ist es das CSS im Head zu platzieren. Hierzu fügt man innerhalb des head ein Element hinzu <code>style</code> und schreibt darin die CSS Anweisungen.
     Der Nachteil davon ist aber, dass man HTML und CSS getrennt hat. Außerdem wird dann die Seite ewig lange. Und wenn man mehrere HTML Seiten hat dann muss man das CSS immer hin und her kopieren bzw. Änderungen
     auf jeder Seite machen und wir sind faule Programmierer und wollen das nicht.</p>
+    <img src="images/css/02_head.png" alt="Inline CSS">
 
     <h3>Extern</h3>
     <p>Daher ist die gängigste Variante die, dass man eine eigene CSS Datei anlegt und HTML und CSS miteinander verknüpft. Hierfür fügt man im Head folgende Zeile hinzu:</p>
     <code>< link href="styles/style.css" rel="stylesheet" ></code>
+    <ul>
+        <li>Link Tags werden verwendet um andere Dateien in die HTML Datei einzufügen.</li>
+        <li>SRC steht für Source und gibt den Pfad zur Datei an.</li>
+        <li>REL sagt quasi, worum es sich handelt, in diesem Fall um ein Stylesheet</li>
+    </ul>
     <p>In diesem Fall heißt die CSS Datei "style" und liegt von der HTML Datei aus gesehen im Ordner "styles".</p>
+    <img src="images/css/03_external.png" alt="Inline CSS">
+    <p>Im Fall von dem Screenshot oberhalb liegen CSS und HTML Datei im selben Ordner, daher muss man nur den Dateinamen bei src eingeben.</p>
 </div>
 </body>
 </html>
