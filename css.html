@@ -51,6 +51,65 @@
     <p>Im Code-Beispiel oben heißt die CSS Datei "style" und liegt von der HTML Datei aus gesehen im Ordner "styles".</p>
     <img src="images/css/03_external.png" alt="Inline CSS" class="mb-4">
     <p>Im Fall von dem Screenshot oberhalb liegen CSS und HTML Datei im selben Ordner, daher muss man nur den Dateinamen bei <code>href</code> eingeben.</p>
+
+    <h2>CSS schreiben</h2>
+    <p>CSS besteht im Prinzip aus drei Teilen:</p>
+    <ul>
+        <li><code>Selektor</code>: Welches Element möchte ich verändern?</li>
+        <li><code>Attribut</code>: Was möchte ich verändern?</li>
+        <li><code>Wert</code>: Wie soll es aussehen?</li>
+    </ul>
+
+    <pre>
+        <code class="language-css">
+            h1 {
+                font-size: 24px;
+            }
+        </code>
+    </pre>
+
+    <h3>Selektoren</h3>
+    <p>Mit einem Selektor "selektiert" man quasi, also wählt das Element aus, das man verändern möchte. Hierfür gibt es wiederum mehrere Möglichkeiten.</p>
+    <ul>
+        <li>Element-Selektor <code>body</code></li>
+        <li>ID-Selektor <code>#navigation</code></li>
+        <li>Klassen-Selektoren <code>.bubble</code></li>
+    </ul>
+
+    <h4>Element-Selektoren</h4>
+    <p>Element-Selektoren werden dann verwendet, wenn man etwas auf wirklich alle diese Elemente anwenden möchte. Zum Beispiel für die ganze Website eine Schriftart. Für alle Überschriften eine bestimmte Farbe.
+    Es ist auch möglich mehrere Elementen gleichzeitig die selben Anweisungen zu geben.</p>
+
+    <pre>
+        <code class="language-css">
+            body {
+                font-family: sans-serif;
+                font-size: 14px;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                color: green;
+            }
+        </code>
+    </pre>
+
+    <h4>ID-Selektoren</h4>
+    <p>ID-Selektoren zeichnen sich dadurch aus, dass sie nur ein mal verwendet werden dürfen. Genau gesagt jede ID nur ein Mal. Hat man einmal eine ID mit einem bestimmten Namen angelegt, darf diese ID nur auf einem Element verwendet werden.
+    Außerdem überschreiben ID-Selektoren Klassen-Selektoren, was es eigentlich recht schwierig macht sie zu verwenden. Dadurch hat es sich in den letzten Jahren so entwickelt, dass IDs für CSS nicht wirklich verwendet werden. Aber gut für dich zu wissen,
+    dass es sie gibt :)</p>
+    <p>Bei Element Selektoren reicht es aus nur CSS zu schreiben. Weil wir mit den Element Selektoren ja direkt die Elemente auswählen. Bei ID Selektoren müssen wir im HTML dem Element diese ID erst zuweisen. Das heißt wir müssen an zwei Stellen etwas tun.</p>
+    <ul>
+        <li>HTML: <code>< h1 id="title">Headline< /h1></code></li>
+        <li>CSS: <code>#title</code></li>
+    </ul>
+
+    <h4>Klassen-Selektoren</h4>
+    <p>Klassen-Selektoren funktionieren nach dem selben Prinzip wie ID Selektoren. Bestimmten Elementen kann ich eine Klasse zuweisen und dadurch das Aussehen verändern. Der Unterschied ist nur der, das Klassen beliebig oft verwendet dürfen, im HTML schreibt man
+    <b>class</b> und im CSS erkennt man sie an dem <b>Punkt</b>.</p>
+    <ul>
+        <li>HTML: <code>< h1 class="title">Headline< /h1></code></li>
+        <li>CSS: <code>.title</code></li>
+    </ul>
 </div>
 
 <script src="js/prism.js"></script>
