@@ -12,36 +12,17 @@
         <a class="navbar-brand" href="/"><img src="images/logo.svg" alt="Logo" class="navbar__logo">Julia's Coding Garden</a>
     </nav>
     <div class="container">
-        <h1>Julia's Coding Garden</h1>
-        <p>Mit dem <code>display</code> Attribut bist du schon bei Flexbox in Berührung gekommen. Flexbox ist aber nur einer von vielen möglichen Werten,
-        den man hier setzen kann. Die meisten davon existieren schon seit ess CSS gibt. Flexbox hingegen gibt es erst seit ein paar Jahren, ebenso wie Grid.
-        Die beiden behandeln wir aber in einem eigenen Kapitel. Hier beschäftigen wir uns nur mit den anderen.</p>
-        <p>Diese Liste ist ein Teil von vielen Möglichkeiten die es gibt, sind aber die wichtigsten. Den Rest hab ich selbst noch nie benützt. War erstaunt, was
-        es da eigentlich alles gibt:</p>
+        <h1>Box Model</h1>
+        <p>Über das Box Model haben wir schon mal gesprochen aber es gibt noch ein paar Tricks, die ich dir noch gern beibringen würde.</p>
+        <p>Zur Erinnerung: Das Box Model sagt im Prinzip, dass Block Elemente wie eine Box sind und sie können spezielle Eigenschaften haben:</p>
         <ul>
-            <li><code>inline</code></li>
-            <li><code>inline-block</code></li>
-            <li><code>block</code></li>
-            <li><code>flex</code></li>
-            <li><code>grid</code></li>
+            <li><code>width</code>: Breite</li>
+            <li><code>height</code>: Höhe</li>
+            <li><code>margin</code>: Abstand nach außen</li>
+            <li><code>border</code>: Rahmenlinie</li>
+            <li><code>padding</code>: Abstand nach innen</li>
         </ul>
-        <p>Vielleicht ist es dir schon aufgefallen, wenn nicht, dann wird es dir ab jetzt sicher auffallen. Manche Elemente verhalten sich wie ein Block und
-        nehmen immer die volle Breite des Bildschirms ein. Andere Elemente sind klein und brauchen nur so viel Platz wie nötig.</p>
-        <p>In <a href="https://codepen.io/ebcont/pen/VwLPPVa" target="_blank">diesem Beispiel</a> hab ich dir einige Element platziert und ihnen einen Hintergrund gegeben
-        damit man sieht wie groß sie sind. Du siehst, dass zum Beispiel die Überschrift die volle Breite einnimmt obwohl der Text darin ja eigentlich viel kürzer ist.</p>
-        <p>Den Text "L Word" hab ich mit einem Link versehen und dieser Link ist auch nur so breit wie das Wort selbst. Ebenso der Button. But why :o</p>
-        <h2>Block Elemente</h2>
-        <p>Elemente wie h1, p und div sind so genannte Block Elemente. Sie haben die Eigenart, dass sie immer die volle Breite einnehmen, egal wie groß ihr Inhalt ist.</p>
-        <p>Sie zeichnen sich auch dadurch aus, dass sie alle Attribute des Box Models annehmen können. Also Margin, Padding und Border.</p>
 
-        <h2>Inline Elemente</h2>
-        <p>Das Gegenteil davon sind Inline Elemente wo zum Beispiel a, span, oder b gehören. Sie sind nur so groß wie ihr Inhalt groß ist und fließen im Flow mit. Man sieht da auch schön, wenn man mehrere Überschriften im HTML
-        platziert, dann sind sie alle untereinander. Platziert man mehrere Links ins HTML sind sie nebeneinander. Auf Inline Elemente kann man kein Margin nach oben und unten anwenden.</p>
-        <p><a href="https://codepen.io/ebcont/pen/MWwJJRL">Display Playground</a></p>
-
-        <h2>Inline Block Elemente</h2>
-        <p>Wie auch sonst im Leben nicht alles schwarz oder weiß ist, gibts auch hier was, was dazwischen liegt. Nämlich inline-block Elemente. Sie vereinen alles aus beiden Welten.
-        Und zwar können sie alle Attribute des Box Models annehmen aber sind nur so breit wie ihr Inhalt. Das trifft zum Beispiel auf Buttons zu.</p>
     </div>
 </body>
 </html>
