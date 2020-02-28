@@ -1,0 +1,14 @@
+.intro{
+height:70vH;
+background-image: url(../img/intro-bg.jpg);
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content:flex-end;
+flex-direction:column;
+color:#287062;
+text-transform: uppercase;
+    
+    
+}
