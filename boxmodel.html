@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Julia's Coding Garden</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="/"><img src="images/logo.svg" alt="Logo" class="navbar__logo">Julia's Coding Garden</a>
+    </nav>
+    <div class="container">
+        <h1>Box Model</h1>
+        <p>Über das Box Model haben wir schon mal gesprochen aber es gibt noch ein paar Tricks, die ich dir noch gern beibringen würde.</p>
+        <p>Zur Erinnerung: Das Box Model sagt im Prinzip, dass Block Elemente wie eine Box sind und sie können spezielle Eigenschaften haben:</p>
+        <ul>
+            <li><code>width</code>: Breite</li>
+            <li><code>height</code>: Höhe</li>
+            <li><code>margin</code>: Abstand nach außen</li>
+            <li><code>border</code>: Rahmenlinie</li>
+            <li><code>padding</code>: Abstand nach innen</li>
+        </ul>
+        <img src="images/display/01_boxmodel.png" alt="Boxmodel">
+        <h2>Breite &amp; Höhe</h2>
+        <p>Ich glaub da brauch ich eh nicht viel dazu sagen. Manchmal möchte man, dass Dinge eine bestimmte Höhe oder Breite haben udn da kann man das damit festlegen.</p>
+        <h2>Margin & Padding</h2>
+        <p>Bei Margin und Padding gibts ein paar Tricks, denn wenn du dir das Foto oben ansiehst dann siehst du, dass dieser Abstand in alle Richtungen gemacht werden kann.
+        Also oben und unten sowie rechts und links. Und es gibt hier verschiedene Schreibweisen, die unterschiedliche Sachen bewirken.</p>
+        <h3>Gleichmäßiger Abstand</h3>
+        <p>Hier erzeugen wir einen gleichmäßigen Abstand in alle Richtungen von 20 Pixeln.</p>
+        <div class="d-flex">
+            <pre class="flex-1">
+            <code class="language-css">
+                padding: 20px;
+            </code>
+        </pre>
+            <img src="images/boxmodel/01_padding.png" alt="Padding" height="140">
+        </div>
+
+        <h3>Bestimmte Richtungen</h3>
+        <p>Hier definieren wir für eine bestimmte Richtung unterschiedliche Werte.</p>
+        <pre>
+            <code class="language-css">
+                padding-top: 10px;
+                padding-right: 20px;
+                padding-bottom: 30px;
+                padding-left: 40px;
+            </code>
+        </pre>
+        <h3>Shorthand</h3>
+        <h4>Shorthand alle Richtungen</h4>
+        <p>Das gleiche, was wir oben machen, kann man aber auch in kurzer Schreibweise (Shorthand) in einer Zeile schreiben. Wichtig ist, dass man
+        hier oben beginnt, dann rechts, dann unten, dann links.</p>
+        <p>So erzeugen wir einen Abstand von:</p>
+        <ul>
+            <li>oben: 10px;</li>
+            <li>rechts: 20px;</li>
+            <li>unten: 30px;</li>
+            <li>links: 40px;</li>
+        </ul>
+        <div class="d-flex">
+            <pre class="flex-1">
+            <code class="language-css">
+                padding: 10px 20px 30px 40px;
+            </code>
+        </pre>
+            <img src="images/boxmodel/02_padding.png" alt="Padding" height="140">
+        </div>
+
+        <h4>Shorthand Horizontal / Vertikal</h4>
+        <p>Man kann aber auch oben & unten und links & rechts gleichzeitig ansprechen. So erzeugen wir oben & unten einen Abstand von 10 Pixeln und links und rechts einen Abstand von 20 Pixeln.</p>
+        <ul>
+            <li>oben: 10px;</li>
+            <li>rechts: 20px;</li>
+            <li>unten: 10px;</li>
+            <li>links: 20px;</li>
+        </ul>
+        <div class="d-flex">
+            <pre class="flex-1">
+            <code class="language-css">
+                padding: 10px 20px;
+            </code>
+        </pre>
+            <img src="images/boxmodel/03_padding.png" alt="Padding" height="140">
+        </div>
+
+        <h4>Shorthand Oben / Horizontal / Unten</h4>
+        <p>Und weils gar so schön ist gibts noch eine dritte Schreibweise, mit der man einen eigenen Abstand für oben, einen für links & rechts und einen für unten festlegen kann.</p>
+        <ul>
+            <li>oben: 10px;</li>
+            <li>rechts: 20px;</li>
+            <li>unten: 30px;</li>
+            <li>links: 20px;</li>
+        </ul>
+        <div class="d-flex">
+            <pre class="flex-1">
+            <code class="language-css">
+                padding: 10px 20px 30px;
+            </code>
+        </pre>
+            <img src="images/boxmodel/04_padding.png" alt="Padding" height="140">
+        </div>
+
+        <p><a href="https://codepen.io/ebcont/pen/wvagqwy?editors=1100" target="_blank">Playground Padding</a></p>
+
+        <h2>Border</h2>
+        <p>Manchmal möchte man, dass Dinge einen Rahmen haben und das kann man mit dem Border Attribut machen. Dieses Attribut besteht aus drei Werten:</p>
+        <ul>
+            <li>Breite</li>
+            <li>Stil</li>
+            <li>Farbe</li>
+            <li>Radius</li>
+        </ul>
+        <pre class="flex-1">
+            <code class="language-css">
+                border: 1px solid red;
+            </code>
+        </pre>
+        <p>Die Schreibweise von oben ist wieder eine Shorthand Schreibweise. Das kann man alles auch einzeln schreiben.</p>
+        <pre class="flex-1">
+            <code class="language-css">
+                border-width: 1px;
+                border-style: solid;
+                border-color: red;
+            </code>
+        </pre>
+        <p>Und hier ist es auch wieder so, dass man den Rahmen auch nur für eine bestimmte Seite definieren kann.</p>
+        <pre class="flex-1">
+            <code class="language-css">
+                border-right: 2px dotted blue;
+            </code>
+        </pre>
+        <p>Auch da kann man das wieder alles einzeln schreiben</p>
+        <pre class="flex-1">
+            <code class="language-css">
+                border-right-width: 2px;
+                border-right-style: dotted;
+                border-right-color: blue;
+            </code>
+        </pre>
+        <h3>Radius</h3>
+        <p>Zusätzlich davon, kann man auch Boxen mit abgerundeten Ecken erzeugen, indem man den <code>border-radius</code> verwendet.</p>
+        <pre class="flex-1">
+            <code class="language-css">
+                border: 2px solid green;
+                border-radius: 5px;
+            </code>
+        </pre>
+        <p>Und das coole ist, dass man einen Kreis erzeugen kann, wenn man den <code>border-radius</code> auf <b>50%</b> stellt.</p>
+        <p><a href="https://codepen.io/ebcont/pen/XWbpaab" target="_blank">Playground Border</a></p>
+    </div>
+    <script src="js/prism.js"></script>
+</body>
+</html>

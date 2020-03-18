@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Julia's Coding Garden</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="/"><img src="images/logo.svg" alt="Logo" class="navbar__logo">Julia's Coding Garden</a>
+    </nav>
+    <div class="container">
+        <h1>Positioning</h1>
+        <p>Bisher haben wir alle Elemente immer nebeneinander bzw. untereinander positioniert. Quasi in einem zweidimensionalen Raum.
+        Manchmal möchte man aber Dinge speziell positionieren. Beispielsweise wie der Header auf der Netflix-Seite. Er bleibt am oberen Rand des Bildschirms
+        stehen, wenn man scrolled. Er liegt in einem Drei-Dimensionalen Raum über den Videos.</p>
+        <img src="images/positioning/01_netflix.png" alt="Netflix">
+        <p>Für genau solche Fälle gibt es das Attribut <code>position</code>. Es kann folgende Werte annehmen:</p>
+        <ul>
+            <li>static</li>
+            <li>absolute</li>
+            <li>relative</li>
+            <li>fixed</li>
+            <li>sticky</li>
+        </ul>
+
+        <h2>Static</h2>
+        <p><code>static</code> ist der Standard-Wert für alle Elemente. Das heißt alles, was wir bisher gemacht haben war statisch positioniert. Also im zweidimensionalen Raum auf einer Ebene.</p>
+
+        <h2>Absolute</h2>
+        <p><code>absolute</code> positioniert ein Element in Relation zu einem anderen Element.</p>
+        <p><a href="https://codepen.io/ebcont/pen/abOBxwm" target="_blank">Position Absolute Playground</a></p>
+        <p>Durch das Setzen des Wertes <code>absolute</code> alleine tut sich noch nicht viel. Erst durch das Angeben einer Position durch
+        <code>top</code>, <code>right</code>, <code>bottom</code> und/oder <code>left</code> bewegt sich das Element im Raum herum.</p>
+        <p>Im Beispiel sieht man auch, dass unser Element nicht nur im Raum herum bewegt werden kann, sondern es auch über dem Text liegt. Also im
+        dreidimensionalen Raum nach oben gehoben wurde.</p>
+
+        <h2>Relative</h2>
+        <p><code>absolute</code> orientiert sich von Haus aus immer am Browser. Das möchte man aber nicht immer. Beispielsweise möchte ich, dass die Box
+        mit dem Datum sich an dem Container orientiert, in dem sich der Text und das Bild befinden.</p>
+        <img src="images/positioning/02_card.png" alt="Card">
+        <p>Hier kommt jetzt der Wert <code>relative</code> ins Spiel. Damit kann ich einem absolut positionierten Element einen neuen Kontext geben.
+        Quasi wenn ich eine wildes Tier fange, das vorher sich frei in der Natur (Browser) bewegt hat und in einen Käfig gebe. Dann kann es sich nur noch
+        innerhalb des Käfigs bewegen.</p>
+        <p><a href="https://codepen.io/ebcont/pen/ZEGBZaG" target="_blank">Position Relative Playground</a></p>
+
+        <h2>Fixed</h2>
+        <p>Im vorigen Beispiel kannst du sehen dass bisher die Elemente zwar beliebig herumgeschoben werden können und auch über den Dingen liegen können.
+        Wenn du aber scrollst bewegt sich der Kreis mit. Ist also trotzdem noch an den Flow gebunden. Manchmal möchte ich aber Dinge wo fixieren, damit sie
+        immer sichtbar sind. Das kann man mit dem Wert <code>fixed</code> erreichen.</p>
+
+        <p><a href="https://codepen.io/ebcont/pen/ExjNJEN?editors=1100" target="_blank">Position Fixed Playground</a></p>
+
+        <h2>Sticky</h2>
+        <p>Wenn ich ganz wild bin möchte ich aber vielleicht, dass ein Element zuerst im Flow ist und erst dann wenn ich scrolle dass es zum Beispiel
+        am oberen Bildschirmrand hängen bleibt. Und dafür kann ich <code>sticky</code> verwenden</p>
+
+        <p><a href="https://codepen.io/ebcont/pen/NWqbmYm" target="_blank">Position Sticky Playground</a></p>
+
+        <p>Das kannst du gut für den Header in deinem Blumen-Projekt verwenden :)</p>
+    </div>
+</body>
+</html>

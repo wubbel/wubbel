@@ -1,0 +1,10 @@
+.button{
+text-transform: uppercase;
+}
+.button-outline-primary{
+border:1px solid #287062;
+}
+
+.button-outline-dark{
+border:1px solid black;
+}
